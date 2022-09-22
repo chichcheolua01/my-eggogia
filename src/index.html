@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <style>
+    input::placeholder {
+      color: white;
+    }
+  </style>
+  <body id="body" class="bg-slate-900 mt-5">
+    <!-- HEADER -->
+    <div
+      class="flex px-12 md:container md:mx-auto items-center justify-between"
+    >
+      <div id="logo">
+        <img class="w-28 rounded-xl" src="images/logo.png" alt="" />
+      </div>
+
+      <ul
+        id="menu"
+        class="space-y-5 hidden fixed top-0 left-0 flex flex-col duration-500 justify-center items-center bg-green-500 w-full h-screen md:translate-y-0 md:bg-slate-900 md:relative md:h-auto md:flex-row md:justify-end md:flex md:space-x-5 md:space-y-0"
+      >
+        <li id="stories-btn">
+          <a class="text-white hover:text-green-600" href="stories.html">STORIES</a>
+        </li>
+        <li id="about-me-btn">
+          <a class="text-white hover:text-green-600" href="#">ABOUT ME</a>
+        </li>
+        <li id="my-projects-btn">
+          <a class="text-white hover:text-green-600" href="#">MY PROJECTS</a>
+        </li>
+        <li id="contact-btn">
+          <a class="text-white hover:text-green-600" href="#">CONTACT</a>
+        </li>
+        <button
+          class="text-white bg-slate-900 w-32 h-10 rounded-3xl md:bg-green-500 md:hover:bg-slate-700 duration-500"
+        >
+          CV
+        </button>
+      </ul>
+      <div class="w-10 h-10 md:hidden z-10">
+        <a id="btn-out" class="hidden" href="">
+          <svg
+            class="text-white"
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"
+            />
+          </svg>
+        </a>
+      </div>
+      <div id="btn-menu-div" class="w-10 h-10 z-10 md:hidden">
+        <a id="btn-menu" class="" href="">
+          <svg
+            class="text-white"
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+    <!-- CONTENT -->
+
+    <div id="content" class="px-2 md:container md:mx-auto pt-20">
+      <div class="px-10 md:grid md:grid-cols-2 md:gap-4">
+        <div class="text-white">
+          Hello, I'm
+          <br />
+          <p class="text-5xl">Nghia</p>
+          <p class="mt-3 text-green-600">Full stack developer</p>
+          <p>
+            I'm a computer technician with a focus on web development with
+            JavaScript.
+          </p>
+          <div class="flex justify-center items-center">
+            <button class="text-white w-32 h-10 rounded-3xl bg-green-500 mt-12">
+              Contact
+            </button>
+          </div>
+          
+        </div>
+
+        <!-- <div class="hidden md:grid md:grid-cols-2 space-y-20">
+                <img class="w-20 h-20" src="./images/language1.png" alt="">
+                <img class="w-20 h-20" src="./images/language2.png" alt="">
+                <img class="w-20 h-20" src="./images/language3.png" alt="">
+                <img class="w-20 h-20" src="./images/language4.png" alt="">
+                <img class="w-20 h-20" src="./images/language5.png" alt="">
+                <img class="w-20 h-20" src="./images/language6.png" alt="">
+                <img class="w-20 h-20" src="./images/language7.png" alt="">
+                <img class="w-20 h-20" src="./images/language8.png" alt="">
+            </div> -->
+
+        <div class="hidden md:grid">
+          <div class="flex justify-center">
+            <img
+              class="slider w-60 h-60 absolute duration-1000"
+              src="./images/language1.png"
+              alt=""
+            />
+            <img
+              class="slider w-60 h-60 absolute duration-1000"
+              src="./images/language2.png"
+              alt=""
+            />
+            <img
+              class="slider w-60 h-60 absolute duration-1000"
+              src="./images/language3.png"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="text-white w-full space-y-8 md:pr-52 px-10 mt-10">
+          <div class="grid w-full justify-center md:justify-start">
+            <p class="text-center text-2xl">About me</p>
+            <hr class="mt-1" />
+          </div>
+          <p>
+            My name is Nghia, I'm a computer technician with a great passion for
+            programming.
+          </p>
+          <p>Improved my skills as a Front-End and Back-End developer</p>
+          <p>
+            I develop websites and applications using HTML, CSS, and JavaScript.
+          </p>
+          <p>
+            I'm always improving myself with each project I get my hands on.
+          </p>
+          <p>
+            I am a dedicated person who pursues his dreams, hardworking and
+            results oriented, I always seek to achieve my best version.
+          </p>
+          <div class="text-center md:text-left">
+            <p class="text-green-600">Here are my main skills:</p>
+            <div class="flex justify-center items-center md:justify-start mt-6 space-x-7">
+              <img src="./images/logo1.png" alt="" />
+              <img src="./images/logo2.png" alt="" />
+              <img src="./images/logo3.png" alt="" />
+              <img src="./images/logo4.png" alt="" />
+              <img src="./images/logo5.png" alt="" />
+              <img src="./images/logo6.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-14 flex w-full justify-center">
+          <img class="object-cover w-full rounded-xl" src="./images/banner_nghia2.png" alt="" />
+        </div>
+      </div>
+
+      <div class="mt-10 flex w-full justify-center">
+        <p class="text-5xl text-white">My porfolio</p>
+      </div>
+      <div
+        class="flex flex-col space-y-10 mt-10 md:grid md:grid-cols-2 md:space-y-0 gap-10 lg:grid-cols-3"
+      >
+        <div
+          class="bg-slate-800 rounded-2xl mx-12 p-8 md:mx-0 flex flex-col justify-between"
+        >
+          <div>
+            <div class="flex justify-between">
+              <img class="w-20 object-cover" src="images/folder.png" alt="" />
+              <img class="w-10 h-10 object-cover" src="images/cat.png" alt="" />
+            </div>
+            <p class="text-white mt-10 text-xl">FCalendar</p>
+            <p class="text-white mt-10 text-xl">
+              A froject of FPT Camera 360, which is uses for taking pictures of FPT Greenwich University <br />
+              FCamara
+            </p>
+          </div>
+          <div class="flex space-x-5 mt-20">
+            <p class="text-white">Node</p>
+            <p class="text-white">MySql</p>
+            <p class="text-white">Ejs</p>
+          </div>
+        </div>
+        <div
+          class="bg-slate-800 rounded-2xl mx-12 p-8 md:mx-0 flex flex-col justify-between"
+        >
+          <div>
+            <div class="flex justify-between">
+              <img class="w-20 object-cover" src="images/folder.png" alt="" />
+              <img class="w-10 h-10 object-cover" src="images/cat.png" alt="" />
+            </div>
+            <p class="text-white mt-10 text-xl">Github Searcher</p>
+            <p class="text-white mt-10 text-xl">
+              A research project developed by Tran Trung Nghia, about Github, Gitplus and other contributors.
+            </p>
+          </div>
+          <div class="flex space-x-5 mt-20">
+            <p class="text-white">React</p>
+            <p class="text-white">Typescript</p>
+            <p class="text-white">Styled</p>
+          </div>
+        </div>
+        <div
+          class="bg-slate-800 rounded-2xl mx-12 p-8 md:mx-0 flex flex-col justify-between"
+        >
+          <div>
+            <div class="flex justify-between">
+              <img class="w-20 object-cover" src="images/folder.png" alt="" />
+              <img class="w-10 h-10 object-cover" src="images/cat.png" alt="" />
+            </div>
+            <p class="text-white mt-10 text-xl">Sunnyside agency</p>
+            <p class="text-white mt-10 text-xl">
+              Landing around Ha Noi and Ho Chi Minh City <br />
+              Frontend Mentor.
+            </p>
+          </div>
+          <div class="flex space-x-5 mt-20">
+            <p class="text-white">HTML</p>
+            <p class="text-white">CSS</p>
+            <p class="text-white">Javascript</p>
+          </div>
+        </div>
+        <div
+          class="bg-slate-800 rounded-2xl mx-12 p-8 md:mx-0 flex flex-col justify-between"
+        >
+          <div>
+            <div class="flex justify-between">
+              <img class="w-20 object-cover" src="images/folder.png" alt="" />
+              <img class="w-10 h-10 object-cover" src="images/cat.png" alt="" />
+            </div>
+            <p class="text-white mt-10 text-xl">Portfólio V1</p>
+            <p class="text-white mt-10 text-xl">
+              Using VueJs to be a searching tool online.
+            </p>
+          </div>
+          <div class="flex space-x-5 mt-20">
+            <p class="text-white">VueJs</p>
+            <p class="text-white">Javascript</p>
+          </div>
+        </div>
+      </div>
+      <div class="px-12">
+        <!-- Xong nho xoa cai hidden o menu di -->
+        <div class="text-center">
+          <p class="text-4xl text-white mt-16">Contact me</p>
+          <p class="text-green-600 mt-14">
+            If you've seen my potential or want to talk to me, don't hesitate to
+            send me a message.
+          </p>
+        </div>
+        <div
+          class="space-x-0 flex flex-col mt-20 md:grid md:grid-cols-2 md:justify-center md:space-x-5"
+        >
+          <div
+            class="bg-green-500 mb-5 h-32 flex flex-col items-center justify-center space-y-5 rounded-3xl"
+          >
+            <img class="" src="./images/contact_icon1.png" alt="" />
+            <p class="">tran20011234@gmail.com</p>
+          </div>
+          <div
+            class="bg-green-500 mb-5 h-32 flex flex-col items-center justify-center space-y-5 rounded-3xl"
+          >
+            <img class="" src="./images/contact_icon2.png" alt="" />
+            <p>(+84)354655-462</p>
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <div
+            class="flex mt-24 text-center flex-col justify-center items-center md:w-auto"
+          >
+            <p class="mb-5 text-white text-2xl">
+              Get in touch using the form below
+            </p>
+            <input
+              class="p-2 pl-3 w-full rounded-2xl bg-slate-900 border border-white text-white mb-2"
+              type="text"
+              placeholder="Search"
+            />
+            <textarea
+              class="p-2 pl-3 w-full rounded-2xl bg-slate-900 border border-white text-white h-32 text-left placeholder:text-white"
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Leave your messenge"
+            ></textarea>
+            <button class="text-white w-32 h-10 rounded-3xl bg-green-500 mt-12">
+              TO SEND
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <footer
+      class="mt-16 bg-slate-800 w-full h-56 md:h-24 text-center space-y-6 flex flex-col justify-center md:grid md:grid-cols-3 md: items-center md:space-y-0"
+    >
+      <div class="">
+        <p class="text-white text-2xl">Nghia</p>
+      </div>
+      <div>
+        <p class="text-white">This site was made with a lot of ❤️</p>
+      </div>
+      <div class="flex justify-center space-x-4">
+        <img src="./images/footer1.png" alt="" />
+        <img src="./images/footer2.png" alt="" />
+        <img src="./images/footer3.png" alt="" />
+        <img src="./images/footer4.png" alt="" />
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
