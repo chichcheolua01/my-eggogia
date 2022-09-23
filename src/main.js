@@ -52,9 +52,14 @@ changeImage();
 
 var stories_btn = document.querySelector("#stories-btn");
 
-stories_btn.addEventListener("click", function () {
-  menu.classList.add("translate-y-full");
-  content.classList.add("translate-y-full");
-  body.classList.add("bg-white");
-  logo.classList.add("hidden");
-});
+// stories_btn.addEventListener("click", function () {
+//   menu.classList.add("translate-y-full");
+//   content.classList.add("translate-y-full");
+//   body.classList.add("bg-white");
+//   logo.classList.add("hidden");
+// });
+
+// window.onload = function (){
+//     stories_menu.classList.add("translate-y-full");
+// };
+

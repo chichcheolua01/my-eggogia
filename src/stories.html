@@ -8,7 +8,29 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-
-      <script src="main.js"></script>
+    <ul
+    id="stories-menu"
+    class="space-y-5 fixed top-0 left-0 flex flex-col duration-500 justify-center items-center bg-green-500 w-full h-screen md:translate-y-0 md:bg-slate-900 md:relative md:h-auto md:flex-row md:justify-end md:flex md:space-x-5 md:space-y-0"
+  >
+    <li>
+      <a class="text-white hover:text-green-600" href="stories.html"><button id="s-stories-btn">STORIES</button></a>
+    </li>
+    <li id="about-me-btn">
+      <a class="text-white hover:text-green-600" href="#">ABOUT ME</a>
+    </li>
+    <li id="my-projects-btn">
+      <a class="text-white hover:text-green-600" href="#">MY PROJECTS</a>
+    </li>
+    <li id="contact-btn">
+      <a class="text-white hover:text-green-600" href="#">CONTACT</a>
+    </li>
+    <button
+      class="text-white bg-slate-900 w-32 h-10 rounded-3xl md:bg-green-500 md:hover:bg-slate-700 duration-500"
+    >
+      CV
+    </button>
+    </ul>
+    <h1>Thầy Đạt đẹp trai</h1>
+    <script src="./stories-main.js"></script>
 </body>
 </html>
